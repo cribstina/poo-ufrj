@@ -40,9 +40,11 @@ class MediaTurma {
             float media = somaDeNotas / iteracoes;
 
             System.out.println("A média da turma é " + media);
+            sc.close();
         } catch (InputMismatchException err) {
             System.out.println("Erro! Tente novamente com um número no formato x,x.");
         }
+
     }
 }
 
@@ -77,6 +79,7 @@ class Refeicoes {
             naoAtendidos += faltaMassa;
 
         System.out.println("O número de passageiros sem atendimento é " + naoAtendidos);
+        sc.close();
     }
 
 }
@@ -96,6 +99,7 @@ class VolumeEsfera {
         } catch (InputMismatchException err) {
             System.out.println("Erro! Entrada inválida. Tente novamente com números no formato x,x.");
         }
+        sc.close();
     }
 }
 
@@ -219,6 +223,8 @@ class Rodagem {
         litrosNecessarios = (horasViagem * velocidadeMedia) / automovelFaz;
         System.out.printf("O seu automóvel precisa de %.3f L de combustível para finalizar a viagem.",
                 litrosNecessarios);
+
+        sc.close();
     }
 }
 
