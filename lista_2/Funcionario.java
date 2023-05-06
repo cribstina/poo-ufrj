@@ -1,4 +1,4 @@
-package lista2;
+package lista_2;
 
 /*
  * 1. A programação modular utiliza módulos independentes pra executar o programa. Esses módulos podem ser estruturados por funções, em linguagens procedurais, ou por classes e seus relacionamentos, em linguagens orientadas a objeto. No entanto, ser orientada a objeto não implica em ser modular, já que podemos ter diferentes objetos dentro de uma classe e não necessariamente as classes serão logicamente independentes.
