@@ -8,8 +8,8 @@ public class FuncionarioTeste {
 
                 Funcionario funcionario3 = funcionario1.clonar();
 
-                System.out.println(funcionario3.nome + funcionario3.salarioHora);
+                System.out.println(funcionario3.getNome() + funcionario3.getSalarioHora());
 
-                System.out.println(igual(funcionario1, funcionario3));
+                System.out.println(funcionario1.igual(funcionario3));
         }
 }
