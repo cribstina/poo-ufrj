@@ -17,6 +17,7 @@ public class PostFoto implements Postavel {
     public boolean adicionaFoto(Foto foto) {
         try {
             this.fotos.add(foto);
+            this.qtde_fotos += 1;
             return true;
         } catch (IllegalArgumentException e) {
             System.out.println("Erro! Argumento inválido.");
@@ -24,8 +25,15 @@ public class PostFoto implements Postavel {
         }
     }
 
-    public boolean removeFoto() {
-        // todo
+    public boolean removeFoto(Foto foto) {
+        try {
+            this.fotos.remove(foto);
+            this.qtde_fotos -= 1;
+            return true;
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro! Argumento inválido.");
+            return false;
+        }
     }
 
     public boolean posta() {
